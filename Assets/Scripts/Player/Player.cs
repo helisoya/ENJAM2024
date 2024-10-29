@@ -10,10 +10,14 @@ public class Player : MonoBehaviour
 {
     [Header("Infos")]
     [SerializeField] private int ID;
+    [SerializeField] private float stunLength = 3;
     private int score;
+    private bool stuned;
+    private float stunStart;
 
     [Header("Components")]
     [SerializeField] private PlayerMovements movements;
+    [SerializeField] private PlayerAttack attack;
 
     /// <summary>
     /// Adds score
@@ -22,11 +26,42 @@ public class Player : MonoBehaviour
     public void AddScore(int score)
     {
         this.score += score;
+        print("Player " + ID + " score is now : " + this.score);
+    }
+
+    /// <summary>
+    /// Stuns the player
+    /// </summary>
+    public void Stun()
+    {
+        stunStart = Time.time;
+        stuned = true;
+        movements.SetVelocity(Vector2.zero);
+    }
+
+    void Update()
+    {
+        if (stuned && Time.time - stunStart >= stunLength)
+        {
+            stuned = false;
+        }
     }
 
     void OnMove(InputValue input)
     {
-        movements.SetVelocity(input.Get<Vector2>());
+        if (!stuned)
+        {
+            movements.SetVelocity(input.Get<Vector2>());
+        }
+
+    }
+
+    void OnFire(InputValue input)
+    {
+        if (!stuned)
+        {
+            attack.TryAttack();
+        }
     }
 
 }
