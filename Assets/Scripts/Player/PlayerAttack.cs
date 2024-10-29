@@ -11,6 +11,8 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private float attackCooldown = 5;
     [SerializeField] private float attackRadius = 4;
     [SerializeField] private LayerMask attackMask;
+    [SerializeField] private LayerMask objectsMask;
+    [SerializeField] private Player player;
     private float lastAttack;
 
     /// <summary>
@@ -29,8 +31,12 @@ public class PlayerAttack : MonoBehaviour
             if (collider.attachedRigidbody.gameObject != gameObject)
             {
                 // Not me, so die please
-                collider.attachedRigidbody.GetComponent<Player>().Stun();
-                print(collider.attachedRigidbody.gameObject.name);
+                Vector3 vector = collider.transform.position - transform.position;
+                if (!Physics2D.Raycast(transform.position, vector, vector.magnitude, objectsMask))
+                {
+                    player.AddScore(collider.attachedRigidbody.GetComponent<Player>().Stun(true));
+                    print(collider.attachedRigidbody.gameObject.name);
+                }
             }
         }
     }

@@ -30,13 +30,24 @@ public class Player : MonoBehaviour
     }
 
     /// <summary>
-    /// Stuns the player
+    /// Stuns the player and returns the amount of money stolen if needed
     /// </summary>
-    public void Stun()
+    /// <param name="stealMoney">Should money be stolen ?</param>
+    /// <returns>The amount of money stolen</returns>
+    public int Stun(bool stealMoney = false)
     {
         stunStart = Time.time;
         stuned = true;
         movements.SetVelocity(Vector2.zero);
+
+        if (stealMoney)
+        {
+            int amountStolen = Mathf.Min(2, score);
+            score -= amountStolen;
+            return amountStolen;
+        }
+
+        return 0;
     }
 
     void Update()
@@ -53,14 +64,21 @@ public class Player : MonoBehaviour
         {
             movements.SetVelocity(input.Get<Vector2>());
         }
-
     }
 
-    void OnFire(InputValue input)
+    void OnAttack(InputValue input)
     {
         if (!stuned)
         {
             attack.TryAttack();
+        }
+    }
+
+    void OnInterract(InputValue input)
+    {
+        if (!stuned)
+        {
+            // Interract with stuff
         }
     }
 

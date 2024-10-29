@@ -779,8 +779,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 619394803}
-  minRange: 4
-  maxRange: 10
+  minRange: 30
+  maxRange: 60
 --- !u!1 &698610809
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,6 +956,10 @@ MonoBehaviour:
   attackMask:
     serializedVersion: 2
     m_Bits: 8
+  objectsMask:
+    serializedVersion: 2
+    m_Bits: 1
+  player: {fileID: 714242272}
 --- !u!1 &812722141
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,6 +1101,10 @@ MonoBehaviour:
   attackMask:
     serializedVersion: 2
     m_Bits: 8
+  objectsMask:
+    serializedVersion: 2
+    m_Bits: 1
+  player: {fileID: 812722143}
 --- !u!1 &815313292
 GameObject:
   m_ObjectHideFlags: 0
