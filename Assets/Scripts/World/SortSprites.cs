@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Sorts sprites by the y axis
+/// </summary>
 public class SortSprites : MonoBehaviour
 {
 
