@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     [Header("Infos")]
     [SerializeField] private int ID;
     [SerializeField] private float stunLength = 3;
+    [SerializeField] private int amountLostOnStun = 2;
     private int score;
     private bool stuned;
     private float stunStart;
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour
     [Header("Components")]
     [SerializeField] private PlayerMovements movements;
     [SerializeField] private PlayerAttack attack;
+    [SerializeField] private PlayerInterraction interraction;
 
     /// <summary>
     /// Adds score
@@ -42,7 +44,7 @@ public class Player : MonoBehaviour
 
         if (stealMoney)
         {
-            int amountStolen = Mathf.Min(2, score);
+            int amountStolen = Mathf.Min(amountLostOnStun, score);
             score -= amountStolen;
             return amountStolen;
         }
@@ -78,7 +80,7 @@ public class Player : MonoBehaviour
     {
         if (!stuned)
         {
-            // Interract with stuff
+            interraction.TryInterract();
         }
     }
 
