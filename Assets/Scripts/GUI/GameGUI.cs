@@ -15,7 +15,11 @@ public class GameGUI : MonoBehaviour
     [SerializeField] private PlayerGUI[] playersGUI;
 
     [Header("General")]
+    [SerializeField] private GameObject gameplayScreen;
     [SerializeField] private TextMeshProUGUI timer;
+
+    [Header("End Screen")]
+    [SerializeField] private GameObject endScreen;
 
     void Awake()
     {
@@ -26,6 +30,17 @@ public class GameGUI : MonoBehaviour
             SetPlayerCandyCount(i, 0);
             SetPlayerCooldownFill(i, 0);
         }
+    }
+
+    /// <summary>
+    /// Opens the end screen
+    /// </summary>
+    /// <param name="player1Score">The player 1's score</param>
+    /// <param name="player2Score">The player 2's score</param>
+    public void OpenEndScreen(int player1Score, int player2Score)
+    {
+        gameplayScreen.SetActive(false);
+
     }
 
     /// <summary>

@@ -48,6 +48,15 @@ public class Player : MonoBehaviour
     }
 
     /// <summary>
+    /// Gets the player's score
+    /// </summary>
+    /// <returns>The player's score</returns>
+    public int GetScore()
+    {
+        return score;
+    }
+
+    /// <summary>
     /// Adds score
     /// </summary>
     /// <param name="scoreAmount">The score to add</param>
