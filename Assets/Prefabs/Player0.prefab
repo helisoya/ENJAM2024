@@ -372,7 +372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 635fbb1dbea11da4797958df2de41eb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interractRadius: 2
+  interractRadius: 1.5
   interractMask:
     serializedVersion: 2
     m_Bits: 64
