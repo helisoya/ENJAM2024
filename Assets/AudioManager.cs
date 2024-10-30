@@ -59,13 +59,13 @@ public class AudioManager : MonoBehaviour
 
         }
 
-        if (_player1.GetComponent<Rigidbody2D>().velocity != Vector2.zero && _canPlayer2AudioPlay)
+        if (_player2.GetComponent<Rigidbody2D>().velocity != Vector2.zero && _canPlayer2AudioPlay)
         {
             _player2Movement.start();
             _canPlayer1AudioPlay = false;
         }
 
-        if (_player1.GetComponent<Rigidbody2D>().velocity == Vector2.zero && _canPlayer2AudioPlay == false)
+        if (_player2.GetComponent<Rigidbody2D>().velocity == Vector2.zero && _canPlayer2AudioPlay == false)
         {
             _canPlayer2AudioPlay = true;
             _player1Movement.stop(STOP_MODE.ALLOWFADEOUT);
