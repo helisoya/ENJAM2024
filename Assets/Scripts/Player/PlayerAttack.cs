@@ -34,6 +34,7 @@ public class PlayerAttack : MonoBehaviour
         foreach (Collider2D collider in colliders)
         {
             Player playerFound = collider.attachedRigidbody.GetComponent<Player>();
+            print(playerFound);
             if (playerFound != player)
             {
                 // Not me, so die please
