@@ -48,6 +48,15 @@ public class Player : MonoBehaviour
     }
 
     /// <summary>
+    /// Gets the player's score
+    /// </summary>
+    /// <returns>The player's score</returns>
+    public int GetScore()
+    {
+        return score;
+    }
+
+    /// <summary>
     /// Adds score
     /// </summary>
     /// <param name="scoreAmount">The score to add</param>
@@ -105,7 +114,7 @@ public class Player : MonoBehaviour
 
     void OnMove(InputValue input)
     {
-        if (!stuned)
+        if (!stuned && GameManager.instance.InGame)
         {
             movements.SetVelocity(input.Get<Vector2>());
         }
@@ -113,7 +122,7 @@ public class Player : MonoBehaviour
 
     void OnAttack(InputValue input)
     {
-        if (!stuned)
+        if (!stuned && GameManager.instance.InGame)
         {
             attack.TryAttack();
         }
@@ -121,7 +130,7 @@ public class Player : MonoBehaviour
 
     void OnInterract(InputValue input)
     {
-        if (!stuned)
+        if (!stuned && GameManager.instance.InGame)
         {
             interraction.TryInterract();
         }
@@ -129,6 +138,8 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        if (!GameManager.instance.InGame) return;
+
         collisionStart = Time.time;
         collided = true;
         if (pad != null) pad.SetMotorSpeeds(0.2f, 0.2f);
