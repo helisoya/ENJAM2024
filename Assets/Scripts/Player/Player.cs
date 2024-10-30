@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
         collided = false;
         stuned = false;
         pad = playerInput.GetDevice<Gamepad>();
-        pad.SetMotorSpeeds(0f, 0f);
+        if (pad != null) pad.SetMotorSpeeds(0f, 0f);
     }
 
     /// <summary>
@@ -93,7 +93,7 @@ public class Player : MonoBehaviour
         if (collided && Time.time - collisionStart >= collisionCooldown)
         {
             collided = false;
-            pad.SetMotorSpeeds(0f, 0f);
+            if (pad != null) pad.SetMotorSpeeds(0f, 0f);
         }
 
         if (stuned && Time.time - stunStart >= stunLength)
@@ -130,7 +130,7 @@ public class Player : MonoBehaviour
     {
         collisionStart = Time.time;
         collided = true;
-        pad.SetMotorSpeeds(0.2f, 0.2f);
+        if (pad != null) pad.SetMotorSpeeds(0.2f, 0.2f);
     }
 
 }
