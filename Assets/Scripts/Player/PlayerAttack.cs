@@ -28,7 +28,7 @@ public class PlayerAttack : MonoBehaviour
         if (Time.time - lastAttack < attackCooldown) return;
 
         lastAttack = Time.time;
-
+        player.SetAnimationTrigger("Attack");
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, attackRadius, attackMask);
 
         foreach (Collider2D collider in colliders)
@@ -40,7 +40,6 @@ public class PlayerAttack : MonoBehaviour
                 if (!Physics2D.Raycast(transform.position, vector, vector.magnitude, objectsMask))
                 {
                     player.AddScore(collider.attachedRigidbody.GetComponent<Player>().Stun(true));
-                    print(collider.attachedRigidbody.gameObject.name);
                 }
             }
         }

@@ -20,7 +20,6 @@ public class Door : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        print(collider.attachedRigidbody.gameObject.name);
         objectsIn.Add(collider.attachedRigidbody.gameObject);
 
         if (objectsIn.Count == 1)
@@ -32,7 +31,6 @@ public class Door : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collider)
     {
-        print(collider.attachedRigidbody.gameObject.name);
         objectsIn.Remove(collider.attachedRigidbody.gameObject);
 
         if (objectsIn.Count == 0)

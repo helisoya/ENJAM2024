@@ -20,6 +20,23 @@ public class Player : MonoBehaviour
     [SerializeField] private PlayerMovements movements;
     [SerializeField] private PlayerAttack attack;
     [SerializeField] private PlayerInterraction interraction;
+    [SerializeField] private Animator animator;
+
+    [Header("Collisions")]
+    [SerializeField] private PlayerInput playerInput;
+    [SerializeField] private float collisionCooldown = 0.5f;
+    private Gamepad pad;
+    private float collisionStart;
+    private bool collided;
+
+
+    void Start()
+    {
+        collided = false;
+        stuned = false;
+        pad = playerInput.GetDevice<Gamepad>();
+        pad.SetMotorSpeeds(0f, 0f);
+    }
 
     /// <summary>
     /// Gets the player's ID
@@ -50,6 +67,7 @@ public class Player : MonoBehaviour
         stunStart = Time.time;
         stuned = true;
         movements.SetVelocity(Vector2.zero);
+        SetAnimationTrigger("Damage");
 
         if (stealMoney)
         {
@@ -61,8 +79,23 @@ public class Player : MonoBehaviour
         return 0;
     }
 
+    /// <summary>
+    /// Sets the animator's trigger
+    /// </summary>
+    /// <param name="triggerName">The trigger's name</param>
+    public void SetAnimationTrigger(string triggerName)
+    {
+        animator.SetTrigger(triggerName);
+    }
+
     void Update()
     {
+        if (collided && Time.time - collisionStart >= collisionCooldown)
+        {
+            collided = false;
+            pad.SetMotorSpeeds(0f, 0f);
+        }
+
         if (stuned && Time.time - stunStart >= stunLength)
         {
             stuned = false;
@@ -91,6 +124,13 @@ public class Player : MonoBehaviour
         {
             interraction.TryInterract();
         }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        collisionStart = Time.time;
+        collided = true;
+        pad.SetMotorSpeeds(0.2f, 0.2f);
     }
 
 }
