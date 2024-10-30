@@ -3748,6 +3748,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candy
       objectReference: {fileID: 0}
+    - target: {fileID: 6376367402467931471, guid: d31cc26fca71ce4448c0cb768b9c7afd, type: 3}
+      propertyPath: m_LocalBounds.m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6376367402467931471, guid: d31cc26fca71ce4448c0cb768b9c7afd, type: 3}
+      propertyPath: m_LocalBounds.m_Center.y
+      value: -0.00000011920929
+      objectReference: {fileID: 0}
+    - target: {fileID: 6376367402467931471, guid: d31cc26fca71ce4448c0cb768b9c7afd, type: 3}
+      propertyPath: m_LocalBounds.m_Extent.x
+      value: 0.9985302
+      objectReference: {fileID: 0}
+    - target: {fileID: 6376367402467931471, guid: d31cc26fca71ce4448c0cb768b9c7afd, type: 3}
+      propertyPath: m_LocalBounds.m_Extent.y
+      value: 0.99853027
+      objectReference: {fileID: 0}
     - target: {fileID: 6589071678550210968, guid: d31cc26fca71ce4448c0cb768b9c7afd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.49
