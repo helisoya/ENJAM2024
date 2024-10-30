@@ -12,6 +12,7 @@ public class Chest : MonoBehaviour
     [SerializeField] private int minCandy = 2;
     [SerializeField] private int maxCandy = 10;
     [SerializeField] private float cooldownTime = 30;
+    [SerializeField] private float probabilityOfTrap = 0.2f;
     private bool open;
     private float openStart;
 
@@ -41,12 +42,18 @@ public class Chest : MonoBehaviour
     /// <summary>
     /// Opens the chest
     /// </summary>
-    /// <returns>The amount of candy in the chest</returns>
+    /// <returns>The amount of candy in the chest, -1 means it was trapped</returns>
     public int Open()
     {
         open = true;
         animator.SetTrigger("Toggle");
         openStart = Time.time;
+
+        if (Random.Range(0f, 1f) <= probabilityOfTrap)
+        {
+            return -1;
+        }
+
         return Random.Range(minCandy, maxCandy);
     }
 }

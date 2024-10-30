@@ -68,6 +68,7 @@ public class Player : MonoBehaviour
         stuned = true;
         movements.SetVelocity(Vector2.zero);
         SetAnimationTrigger("Damage");
+        OnCollisionEnter2D(null);
 
         if (stealMoney)
         {
