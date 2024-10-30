@@ -15,6 +15,7 @@ public class Candy : MonoBehaviour
         Player player = collider.attachedRigidbody.GetComponent<Player>();
         if (player)
         {
+            print(scoreValue);
             player.AddScore(scoreValue);
             Destroy(gameObject);
         }

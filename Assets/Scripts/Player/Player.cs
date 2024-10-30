@@ -22,13 +22,22 @@ public class Player : MonoBehaviour
     [SerializeField] private PlayerInterraction interraction;
 
     /// <summary>
+    /// Gets the player's ID
+    /// </summary>
+    /// <returns>The player's ID</returns>
+    public int GetID()
+    {
+        return ID;
+    }
+
+    /// <summary>
     /// Adds score
     /// </summary>
-    /// <param name="score">The score to add</param>
-    public void AddScore(int score)
+    /// <param name="scoreAmount">The score to add</param>
+    public void AddScore(int scoreAmount)
     {
-        this.score += score;
-        print("Player " + ID + " score is now : " + this.score);
+        score += scoreAmount;
+        GameGUI.instance.SetPlayerCandyCount(ID, score);
     }
 
     /// <summary>
@@ -45,7 +54,7 @@ public class Player : MonoBehaviour
         if (stealMoney)
         {
             int amountStolen = Mathf.Min(amountLostOnStun, score);
-            score -= amountStolen;
+            AddScore(-amountStolen);
             return amountStolen;
         }
 

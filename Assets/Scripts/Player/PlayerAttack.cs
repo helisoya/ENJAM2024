@@ -15,6 +15,11 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private Player player;
     private float lastAttack;
 
+    void Start()
+    {
+        lastAttack = -attackCooldown;
+    }
+
     /// <summary>
     /// Tries to attack if the cooldown permits it
     /// </summary>
@@ -38,6 +43,19 @@ public class PlayerAttack : MonoBehaviour
                     print(collider.attachedRigidbody.gameObject.name);
                 }
             }
+        }
+    }
+
+    void Update()
+    {
+        float currentCooldownValue = Time.time - lastAttack;
+        if (currentCooldownValue < attackCooldown)
+        {
+            GameGUI.instance.SetPlayerCooldownFill(player.GetID(), 1 - (currentCooldownValue / attackCooldown));
+        }
+        else
+        {
+            GameGUI.instance.SetPlayerCooldownFill(player.GetID(), 0);
         }
     }
 
