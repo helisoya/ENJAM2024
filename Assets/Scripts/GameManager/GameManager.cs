@@ -22,12 +22,14 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if (!InGame) return;
         gameTimeInSeconds -= Time.deltaTime;
 
         if (gameTimeInSeconds <= 0)
         {
             // End
             InGame = false;
+            GameGUI.instance.OpenEndScreen(players[0].GetScore(), players[1].GetScore());
         }
         else
         {
