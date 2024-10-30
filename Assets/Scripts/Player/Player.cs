@@ -136,6 +136,15 @@ public class Player : MonoBehaviour
         }
     }
 
+    void OnInterract1(InputValue input)
+    {
+        print("Pause ?");
+        if (input.isPressed && GameManager.instance.InGame)
+        {
+            GameGUI.instance.TogglePauseMenu();
+        }
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (!GameManager.instance.InGame) return;
