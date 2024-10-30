@@ -1,58 +1,23 @@
-[LOG] System::create                           : Header version = 2.02.22. Current version = 2.02.22.
-[LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
-[LOG] SystemI::init                            : Initialize version=20222 (142841), maxchannels=256, flags=0x00020000
-[LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
-[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
-[LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000018546B03078 isAsync 0 updatePeriod 0.02
-[LOG] AsyncManager::init                       : done
-[LOG] PlaybackSystem::init                     : 
-[LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
-[LOG] PlaybackSystem::init                     : done
-[LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
-[LOG] Manager::init                            : done.
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] SoundI::release                          :  (000001853D8E39D8)
-[LOG] SoundI::release                          :     Wood Crack-001 (000001852FC16CB8)
-[LOG] SoundI::release                          :  (000001849817A0B8)
-[LOG] SoundI::release                          :     Wood Crack-002 (0000018553125898)
-[LOG] SoundI::release                          :  (000001853D8E3B48)
-[LOG] SoundI::release                          :     Wood Crack-003 (000001849689E0F8)
-[LOG] SoundI::release                          :  (000001849817A958)
-[LOG] SoundI::release                          :     Wood Crack-004 (000001849689E778)
-[LOG] SoundI::release                          :  (000001853D8E3868)
-[LOG] SoundI::release                          :     Wood Crack-005 (000001843B393228)
-[LOG] SoundI::release                          :  (000001853D8E3CB8)
-[LOG] SoundI::release                          :     Wood Crack-006 (000001843B393708)
-[LOG] SoundI::release                          :  (000001853D8E3F98)
-[LOG] SoundI::release                          :     Wood Crack-008 (000001843B393D88)
-[LOG] SoundI::release                          :  (000001849817A228)
-[LOG] SoundI::release                          :     Wood Crack-009 (0000018553126258)
-[LOG] SoundI::release                          :  (000001849817AC38)
-[LOG] SoundI::release                          :     Thunder-001 (0000018553125F18)
-[LOG] SoundI::release                          : RAIN (0000018417EBEAA8)
-[LOG] SoundI::release                          :     RAIN (00000183EB51B2A8)
-[LOG] SoundI::release                          :     RAIN (00000184CAE4C148)
-[LOG] SoundI::release                          :  (000001853D8E4108)
-[LOG] SoundI::release                          :     Thunder-002 (000001852FC15FB8)
-[LOG] SoundI::release                          :  (000001849817ADA8)
-[LOG] SoundI::release                          :     Thunder-003 (000001849689E298)
-[LOG] SoundI::release                          :  (000001853D8E3E28)
-[LOG] SoundI::release                          :     Thunder-004 (000001849689EC58)
-[LOG] SoundI::release                          :  (000001849817AAC8)
-[LOG] SoundI::release                          :     Thunder-005 (000001849689EAB8)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
+[LOG] System::create                           :     Header version = 2.02.22. Current version = 2.02.22.
+[LOG] Manager::init                            :     maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
+[LOG] SystemI::init                            :     Initialize version=20222 (142841), maxchannels=256, flags=0x00020000
+[LOG] SystemI::setOutputInternal               :     Setting output to 'FMOD WASAPI Output'
+[LOG] OutputWASAPI::init                       :     Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       :     Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       :     Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] Thread::initThread                       :     Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] Thread::initThread                       :     Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncManager::init                       :     manager 0000018546B07BD8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       :     done
+[LOG] PlaybackSystem::init                     :     
+[LOG] Thread::initThread                       :     Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
+[LOG] PlaybackSystem::init                     :     done
+[LOG] Thread::initThread                       :     Init FMOD Studio bank load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
+[LOG] Manager::init                            :     done.
+[LOG] Manager::readBank                        :     fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        :     fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PlaybackSystem::acquireMasterBus         :     Setting master channel group format to 6
+[LOG] Manager::readBank                        :     fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        :     fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        :     fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PlaybackSystem::acquireMasterBus         :     Setting master channel group format to 6
