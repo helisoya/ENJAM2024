@@ -336,7 +336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32ef8202a8ead748aae5d77cafb0a29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 8
   rb: {fileID: 8986766728658986336}
   spriteRenderer: {fileID: 2882079570762889626}
 --- !u!114 &3091499612004333711
@@ -352,7 +352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackCooldown: 5
-  attackRadius: 1.5
+  attackRadius: 3.5
   attackMask:
     serializedVersion: 2
     m_Bits: 8
@@ -372,7 +372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 635fbb1dbea11da4797958df2de41eb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interractRadius: 1.5
+  interractRadius: 2
   interractMask:
     serializedVersion: 2
     m_Bits: 64
