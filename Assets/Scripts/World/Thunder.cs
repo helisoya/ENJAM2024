@@ -14,9 +14,11 @@ public class Thunder : MonoBehaviour
     private float lastThunder;
     private float currentThunderCooldown;
 
+    private FMOD.Studio.EventInstance ThunderStrike;
     void Start()
     {
         GenerateNextThunder();
+        ThunderStrike = FMODUnity.RuntimeManager.CreateInstance("event:/THUNDERS");
     }
 
     /// <summary>
@@ -33,6 +35,7 @@ public class Thunder : MonoBehaviour
         if (Time.time - lastThunder >= currentThunderCooldown)
         {
             animator.SetTrigger("Thunder");
+            ThunderStrike.start();
             GenerateNextThunder();
         }
     }
