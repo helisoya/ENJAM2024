@@ -33,13 +33,14 @@ public class PlayerAttack : MonoBehaviour
 
         foreach (Collider2D collider in colliders)
         {
-            if (collider.attachedRigidbody.gameObject != gameObject)
+            Player playerFound = collider.attachedRigidbody.GetComponent<Player>();
+            if (playerFound != player)
             {
                 // Not me, so die please
-                Vector3 vector = collider.transform.position - transform.position;
+                Vector3 vector = collider.transform.position + collider.bounds.center - transform.position;
                 if (!Physics2D.Raycast(transform.position, vector, vector.magnitude, objectsMask))
                 {
-                    player.AddScore(collider.attachedRigidbody.GetComponent<Player>().Stun(true));
+                    player.AddScore(playerFound.Stun(true));
                 }
             }
         }
