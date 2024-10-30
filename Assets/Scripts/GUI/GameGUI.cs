@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 /// <summary>
@@ -15,7 +16,13 @@ public class GameGUI : MonoBehaviour
     [SerializeField] private PlayerGUI[] playersGUI;
 
     [Header("General")]
+    [SerializeField] private GameObject gameplayScreen;
     [SerializeField] private TextMeshProUGUI timer;
+
+    [Header("End Screen")]
+    [SerializeField] private GameObject endScreen;
+    [SerializeField] private TextMeshProUGUI player1ScoreText;
+    [SerializeField] private TextMeshProUGUI player2ScoreText;
 
     void Awake()
     {
@@ -26,6 +33,19 @@ public class GameGUI : MonoBehaviour
             SetPlayerCandyCount(i, 0);
             SetPlayerCooldownFill(i, 0);
         }
+    }
+
+    /// <summary>
+    /// Opens the end screen
+    /// </summary>
+    /// <param name="player1Score">The player 1's score</param>
+    /// <param name="player2Score">The player 2's score</param>
+    public void OpenEndScreen(int player1Score, int player2Score)
+    {
+        gameplayScreen.SetActive(false);
+        endScreen.SetActive(true);
+        player1ScoreText.text = player1Score.ToString();
+        player2ScoreText.text = player2Score.ToString();
     }
 
     /// <summary>
@@ -55,6 +75,12 @@ public class GameGUI : MonoBehaviour
     public void SetPlayerCandyCount(int playerID, int candyCount)
     {
         playersGUI[playerID].candyCountFill.text = "x" + candyCount;
+    }
+
+
+    public void Click_ToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
 
