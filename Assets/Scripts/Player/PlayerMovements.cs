@@ -12,6 +12,7 @@ public class PlayerMovements : MonoBehaviour
 
     [Header("Components")]
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private SpriteRenderer spriteRenderer;
 
     private Vector2 velocity;
 
@@ -22,6 +23,12 @@ public class PlayerMovements : MonoBehaviour
     public void SetVelocity(Vector2 velocity)
     {
         this.velocity = velocity;
+
+        if (velocity.x != 0)
+        {
+            spriteRenderer.flipX = velocity.x > 0;
+        }
+
     }
 
     void FixedUpdate()

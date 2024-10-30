@@ -14,6 +14,9 @@ public class GameGUI : MonoBehaviour
     [Header("Players")]
     [SerializeField] private PlayerGUI[] playersGUI;
 
+    [Header("General")]
+    [SerializeField] private TextMeshProUGUI timer;
+
     void Awake()
     {
         instance = this;
@@ -23,6 +26,15 @@ public class GameGUI : MonoBehaviour
             SetPlayerCandyCount(i, 0);
             SetPlayerCooldownFill(i, 0);
         }
+    }
+
+    /// <summary>
+    /// Sets the timer's value
+    /// </summary>
+    /// <param name="remainingSeconds">The remaining timer</param>
+    public void SetTimerValue(int remainingSeconds)
+    {
+        timer.text = remainingSeconds + "s";
     }
 
     /// <summary>
