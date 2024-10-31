@@ -28,7 +28,7 @@ public class PlayerInterraction : MonoBehaviour
 
             if (chest != null && chest.CanOpen() && !Physics2D.Raycast(transform.position, vector, vector.magnitude, objectsMask))
             {
-                int score = chest.Open();
+                int score = chest.Open(player);
                 if (score == -1)
                 {
                     player.Stun();
