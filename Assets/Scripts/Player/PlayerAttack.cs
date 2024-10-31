@@ -39,7 +39,6 @@ public class PlayerAttack : MonoBehaviour
         foreach (Collider2D collider in colliders)
         {
             Player playerFound = collider.attachedRigidbody.GetComponent<Player>();
-            print(playerFound);
             if (playerFound != player)
             {
                 // Not me, so die please
@@ -57,11 +56,11 @@ public class PlayerAttack : MonoBehaviour
         float currentCooldownValue = Time.time - lastAttack;
         if (currentCooldownValue < attackCooldown)
         {
-            GameGUI.instance.SetPlayerCooldownFill(player.GetID(), 1 - (currentCooldownValue / attackCooldown));
+            GameGUI.instance.SetPlayerCooldownFill(player.GUIID, 1 - (currentCooldownValue / attackCooldown));
         }
         else
         {
-            GameGUI.instance.SetPlayerCooldownFill(player.GetID(), 0);
+            GameGUI.instance.SetPlayerCooldownFill(player.GUIID, 0);
         }
     }
 

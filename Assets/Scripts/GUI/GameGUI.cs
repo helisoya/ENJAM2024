@@ -12,8 +12,14 @@ public class GameGUI : MonoBehaviour
 {
     public static GameGUI instance { get; private set; }
 
+    [Header("Ready Up")]
+    [SerializeField] private GameObject readyUpScreen;
+    [SerializeField] private PlayerReadyUp[] playerReadyUps;
+
     [Header("Players")]
-    [SerializeField] private PlayerGUI[] playersGUI;
+    [SerializeField] private PlayerGUI prefabPlayerGUI;
+    [SerializeField] private Transform[] playersGUIRoots;
+    private List<PlayerGUI> playersGUI;
 
     [Header("General")]
     [SerializeField] private GameObject gameplayScreen;
@@ -21,8 +27,7 @@ public class GameGUI : MonoBehaviour
 
     [Header("End Screen")]
     [SerializeField] private GameObject endScreen;
-    [SerializeField] private TextMeshProUGUI player1ScoreText;
-    [SerializeField] private TextMeshProUGUI player2ScoreText;
+    [SerializeField] private PlayerScore[] scores;
 
     [Header("Pause Screen")]
     [SerializeField] private GameObject pauseScreen;
@@ -30,12 +35,8 @@ public class GameGUI : MonoBehaviour
     void Awake()
     {
         instance = this;
-
-        for (int i = 0; i < 2; i++)
-        {
-            SetPlayerCandyCount(i, 0);
-            SetPlayerCooldownFill(i, 0);
-        }
+        playersGUI = new List<PlayerGUI>();
+        OpenReadyUpScreen();
     }
 
     /// <summary>
@@ -43,7 +44,6 @@ public class GameGUI : MonoBehaviour
     /// </summary>
     public void TogglePauseMenu()
     {
-        print("Hello");
         pauseScreen.SetActive(!pauseScreen.activeInHierarchy);
         Time.timeScale = pauseScreen.activeInHierarchy ? 0 : 1;
     }
@@ -51,14 +51,24 @@ public class GameGUI : MonoBehaviour
     /// <summary>
     /// Opens the end screen
     /// </summary>
-    /// <param name="player1Score">The player 1's score</param>
-    /// <param name="player2Score">The player 2's score</param>
-    public void OpenEndScreen(int player1Score, int player2Score)
+    /// <param name="players">The players</param>
+    public void OpenEndScreen(List<Player> players)
     {
         gameplayScreen.SetActive(false);
         endScreen.SetActive(true);
-        player1ScoreText.text = player1Score.ToString();
-        player2ScoreText.text = player2Score.ToString();
+
+        for (int i = 0; i < 4; i++)
+        {
+            if (i < players.Count)
+            {
+                scores[i].SetScore(players[i].GetScore());
+            }
+            else
+            {
+                scores[i].gameObject.SetActive(false);
+            }
+        }
+
     }
 
     /// <summary>
@@ -71,13 +81,59 @@ public class GameGUI : MonoBehaviour
     }
 
     /// <summary>
+    /// Opens the ready up screen
+    /// </summary>
+    public void OpenReadyUpScreen()
+    {
+        readyUpScreen.SetActive(true);
+        gameplayScreen.SetActive(false);
+
+        foreach (PlayerReadyUp readyUp in playerReadyUps)
+        {
+            readyUp.gameObject.SetActive(false);
+            readyUp.SetReadyUpCheckActive(false);
+        }
+    }
+
+    /// <summary>
+    /// Opens the gameplay screen
+    /// </summary>
+    public void OpenGamePlayScreen()
+    {
+        readyUpScreen.SetActive(false);
+        gameplayScreen.SetActive(true);
+    }
+
+    /// <summary>
+    /// Ready ups a player
+    /// </summary>
+    /// <param name="ID">The player's ID</param>
+    public void ReadyUpPlayer(int ID)
+    {
+        playerReadyUps[ID].SetReadyUpCheckActive(true);
+    }
+
+    /// <summary>
+    /// Adds a new player's GUI
+    /// </summary>
+    /// <param name="ID">The player's ID</param>
+    /// <returns></returns>
+    public int AddNewPlayerGUI(int ID)
+    {
+        int GUIID = playersGUI.Count;
+        playerReadyUps[ID].gameObject.SetActive(true);
+        playersGUI.Add(Instantiate(prefabPlayerGUI, playersGUIRoots[GUIID]));
+        return GUIID;
+    }
+
+    /// <summary>
     /// Sets a player's cooldown fill amount
     /// </summary>
     /// <param name="playerID">The player's ID</param>
     /// <param name="cooldownFill">The player's cooldown fill amount</param>
     public void SetPlayerCooldownFill(int playerID, float cooldownFill)
     {
-        playersGUI[playerID].attackCooldownFill.fillAmount = cooldownFill;
+        playersGUI[playerID].SetPlayerCooldownFill(cooldownFill);
     }
 
     /// <summary>
@@ -87,23 +143,12 @@ public class GameGUI : MonoBehaviour
     /// <param name="candyCount">The player's candy count</param>
     public void SetPlayerCandyCount(int playerID, int candyCount)
     {
-        playersGUI[playerID].candyCountFill.text = "x" + candyCount;
+        playersGUI[playerID].SetPlayerCandyCount(candyCount);
     }
 
 
     public void Click_ToMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
-    }
-
-
-    /// <summary>
-    /// Represents a player's GUI
-    /// </summary>
-    [System.Serializable]
-    public class PlayerGUI
-    {
-        public Image attackCooldownFill;
-        public TextMeshProUGUI candyCountFill;
     }
 }

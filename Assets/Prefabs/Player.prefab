@@ -251,7 +251,7 @@ GameObject:
   - component: {fileID: 3395422915682316485}
   - component: {fileID: 8986766728658986336}
   m_Layer: 3
-  m_Name: Player0
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -315,9 +315,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a468deaae001c1441a705a1b5728ee16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 0
-  stunLength: 3
-  amountLostOnStun: 2
+  stunLength: 2.5
+  amountLostOnStun: 3
   movements: {fileID: 1285571663784977403}
   attack: {fileID: 3091499612004333711}
   interraction: {fileID: 3395422915682316485}
