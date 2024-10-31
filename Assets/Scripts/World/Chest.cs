@@ -18,11 +18,13 @@ public class Chest : MonoBehaviour
 
     private FMOD.Studio.EventInstance _chestAudio;
     private FMOD.Studio.EventInstance _chestTrickAudio;
+    private FMOD.Studio.EventInstance _candyAudio;
     void Start()
     {
         open = false;
         _chestAudio = FMODUnity.RuntimeManager.CreateInstance("event:/CHEST");
         _chestTrickAudio = FMODUnity.RuntimeManager.CreateInstance("event:/STUN");
+        _candyAudio = FMODUnity.RuntimeManager.CreateInstance("event:/CANDY");
     }
 
     void Update()
@@ -64,6 +66,7 @@ public class Chest : MonoBehaviour
         }
         player.SetCanBeTargetedByBudendia(true);
         animator.SetTrigger("Treat");
+        _candyAudio.start();
         return Random.Range(minCandy, maxCandy);
     }
 }
