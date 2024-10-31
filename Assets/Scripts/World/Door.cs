@@ -16,9 +16,12 @@ public class Door : MonoBehaviour
     private bool open;
     private float startClose;
 
+    private FMOD.Studio.EventInstance _doorOpenAudio;
+
     void Start()
     {
         objectsIn = new List<GameObject>();
+        _doorOpenAudio = FMODUnity.RuntimeManager.CreateInstance("event:/OPEN DOOR");
     }
 
     void Update()
@@ -39,6 +42,7 @@ public class Door : MonoBehaviour
             open = true;
             // Was at 0 before, so must be opened
             spriteRenderer.sprite = openSprite;
+            _doorOpenAudio.start();
         }
     }
 
