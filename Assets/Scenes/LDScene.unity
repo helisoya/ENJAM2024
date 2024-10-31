@@ -37518,6 +37518,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 7703845801102798037, guid: 1707a49f555e07645a10b06f186055dd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8686152779994689287, guid: 1707a49f555e07645a10b06f186055dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.72
