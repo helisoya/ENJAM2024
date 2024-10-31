@@ -147,7 +147,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreValue: 1
   animator: {fileID: 6154503503225883730}
-  destroyAfterSeconds: 1.1
+  hideAfterSeconds: 1.1
+  minRespawnTime: 10
+  maxRespawnTime: 11
 --- !u!95 &6154503503225883730
 Animator:
   serializedVersion: 5
