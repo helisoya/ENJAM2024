@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stunLength: 2.5
-  amountLostOnStun: 3
+  amountLostOnStun: 20
   lightRadiusWhenStuned: 2
   movements: {fileID: 1285571663784977403}
   attack: {fileID: 3091499612004333711}
