@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -25,9 +26,11 @@ public class GameGUI : MonoBehaviour
     [Header("General")]
     [SerializeField] private GameObject gameplayScreen;
     [SerializeField] private TextMeshProUGUI timer;
+    [SerializeField] private EventSystem eventSystem;
 
     [Header("End Screen")]
     [SerializeField] private GameObject endScreen;
+    [SerializeField] private GameObject buttonEnding;
     [SerializeField] private PlayerScore[] scores;
 
     [Header("Pause Screen")]
@@ -57,6 +60,8 @@ public class GameGUI : MonoBehaviour
     {
         gameplayScreen.SetActive(false);
         endScreen.SetActive(true);
+        eventSystem.SetSelectedGameObject(buttonEnding);
+        eventSystem.firstSelectedGameObject = buttonEnding;
 
         for (int i = 0; i < 4; i++)
         {
@@ -79,7 +84,7 @@ public class GameGUI : MonoBehaviour
     /// <param name="remainingSeconds">The remaining timer</param>
     public void SetTimerValue(int remainingSeconds)
     {
-        timer.text = remainingSeconds + "s";
+        timer.text = remainingSeconds + " seconds";
     }
 
     /// <summary>
