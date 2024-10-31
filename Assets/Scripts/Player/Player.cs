@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering.Universal;
 
 /// <summary>
 /// Represents a player
@@ -14,6 +15,7 @@ public class Player : MonoBehaviour
     [Header("Infos")]
     [SerializeField] private float stunLength = 3;
     [SerializeField] private int amountLostOnStun = 2;
+    [SerializeField] private float lightRadiusWhenStuned = 2f;
     private int score;
     private bool stuned;
     private float stunStart;
@@ -23,6 +25,7 @@ public class Player : MonoBehaviour
     [SerializeField] private PlayerAttack attack;
     [SerializeField] private PlayerInterraction interraction;
     [SerializeField] private Animator animator;
+    [SerializeField] private Light2D linkedLight;
 
     [Header("Collisions")]
     [SerializeField] private PlayerInput playerInput;
@@ -63,6 +66,15 @@ public class Player : MonoBehaviour
     }
 
     /// <summary>
+    /// Sets the player's light radius
+    /// </summary>
+    /// <param name="radius">The light's new radius</param>
+    public void SetLightRadius(float radius)
+    {
+        linkedLight.pointLightOuterRadius = radius;
+    }
+
+    /// <summary>
     /// Stuns the player and returns the amount of money stolen if needed
     /// </summary>
     /// <param name="stealMoney">Should money be stolen ?</param>
@@ -72,6 +84,7 @@ public class Player : MonoBehaviour
         stunStart = Time.time;
         stuned = true;
         movements.SetVelocity(Vector2.zero);
+        SetLightRadius(lightRadiusWhenStuned);
         SetAnimationTrigger("Damage");
         OnCollisionEnter2D(null);
 
