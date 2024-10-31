@@ -16,8 +16,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform[] spawnPositions;
     public List<Player> players { get; private set; }
 
+    private FMOD.Studio.EventInstance _uiAudio;
+
     void Awake()
     {
+        _uiAudio = FMODUnity.RuntimeManager.CreateInstance("event:/UI");
         instance = this;
         InGame = false;
         players = new List<Player>();
@@ -31,6 +34,7 @@ public class GameManager : MonoBehaviour
     /// <returns>The new player's ID</returns>
     public int RegisterPlayer(Player player)
     {
+        _uiAudio.start();
         int ID = players.Count;
         players.Add(player);
         player.transform.position = spawnPositions[ID].position;
@@ -46,6 +50,7 @@ public class GameManager : MonoBehaviour
     {
         if (!readyUps.Contains(ID))
         {
+            _uiAudio.start();
             readyUps.Add(ID);
             GameGUI.instance.ReadyUpPlayer(ID);
             if (readyUps.Count >= players.Count)
