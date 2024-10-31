@@ -126,7 +126,7 @@ public class GameGUI : MonoBehaviour
         playerReadyUps[ID].gameObject.SetActive(true);
         playerReadyUps[ID].SetPlayerColor(playerColors[ID]);
         PlayerGUI player = Instantiate(prefabPlayerGUI, playersGUIRoots[GUIID]);
-        player.SetPlayerColor(playerColors[ID]);
+        player.SetPlayerImg(Resources.Load<Sprite>("Players/" + ID + "/GUI"));
         playersGUI.Add(player);
         return GUIID;
     }

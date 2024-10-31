@@ -20,12 +20,12 @@ public class PlayerGUI : MonoBehaviour
     }
 
     /// <summary>
-    /// Sets the player's color
+    /// Sets the player's sprite
     /// </summary>
-    /// <param name="color">The player's color</param>
-    public void SetPlayerColor(Color color)
+    /// <param name="color">The player's sprite</param>
+    public void SetPlayerImg(Sprite sprite)
     {
-        playerImg.color = color;
+        playerImg.sprite = sprite;
     }
 
     /// <summary>

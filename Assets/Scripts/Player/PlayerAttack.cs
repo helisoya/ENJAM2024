@@ -14,6 +14,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private LayerMask attackMask;
     [SerializeField] private LayerMask objectsMask;
     [SerializeField] private Player player;
+    [SerializeField] private CandyPickupAnim prefabCandyPickup;
     private float lastAttack;
 
     private FMOD.Studio.EventInstance AttackAudio;
@@ -47,7 +48,12 @@ public class PlayerAttack : MonoBehaviour
                 Vector3 vector = collider.bounds.center - transform.position;
                 if (!Physics2D.Raycast(transform.position, vector, vector.magnitude, objectsMask))
                 {
-                    player.AddScore(playerFound.Stun(true));
+                    int numberStolen = playerFound.Stun(true);
+                    player.AddScore(numberStolen);
+                    for (int i = 0; i < numberStolen / 2; i++)
+                    {
+                        Instantiate(prefabCandyPickup, playerFound.transform.position, Quaternion.identity).Init(transform);
+                    }
                 }
             }
         }
