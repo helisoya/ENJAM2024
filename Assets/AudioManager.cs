@@ -33,7 +33,7 @@ public class AudioManager : MonoBehaviour
 
         _levelAmbianceAudio = FMODUnity.RuntimeManager.CreateInstance("event:/AMBIANCE");
         _player1Movement = FMODUnity.RuntimeManager.CreateInstance("event:/WALK PLAYER 1");
-        _player1Movement = FMODUnity.RuntimeManager.CreateInstance("event:/WALK PLAYER 2");
+        _player2Movement = FMODUnity.RuntimeManager.CreateInstance("event:/WALK PLAYER 2");
     }
     void Start()
     {
@@ -50,25 +50,29 @@ public class AudioManager : MonoBehaviour
         {
             _player1Movement.start();
             _canPlayer1AudioPlay = false;
+            
         }
 
         if (_player1.GetComponent<Rigidbody2D>().velocity == Vector2.zero && _canPlayer1AudioPlay == false)
         {
             _canPlayer1AudioPlay = true;
             _player1Movement.stop(STOP_MODE.ALLOWFADEOUT);
+            
 
         }
 
         if (_player2.GetComponent<Rigidbody2D>().velocity != Vector2.zero && _canPlayer2AudioPlay)
         {
             _player2Movement.start();
-            _canPlayer1AudioPlay = false;
+            _canPlayer2AudioPlay = false;
+            Debug.Log("Audio Start");
         }
 
         if (_player2.GetComponent<Rigidbody2D>().velocity == Vector2.zero && _canPlayer2AudioPlay == false)
         {
             _canPlayer2AudioPlay = true;
-            _player1Movement.stop(STOP_MODE.ALLOWFADEOUT);
+            _player2Movement.stop(STOP_MODE.ALLOWFADEOUT);
+            Debug.Log("Audio Stop");
 
         }
     }

@@ -16,9 +16,11 @@ public class Chest : MonoBehaviour
     private bool open;
     private float openStart;
 
+    private FMOD.Studio.EventInstance ChestAudio;
     void Start()
     {
         open = false;
+        ChestAudio = FMODUnity.RuntimeManager.CreateInstance("event:/CHEST");
     }
 
     void Update()
@@ -46,7 +48,7 @@ public class Chest : MonoBehaviour
     public int Open()
     {
         open = true;
-
+        ChestAudio.start();
         openStart = Time.time;
 
         if (Random.Range(0f, 1f) <= probabilityOfTrap)
