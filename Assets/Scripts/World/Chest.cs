@@ -49,7 +49,6 @@ public class Chest : MonoBehaviour
     {
         open = true;
         ChestAudio.start();
-        animator.SetTrigger("Toggle");
         openStart = Time.time;
 
         if (Random.Range(0f, 1f) <= probabilityOfTrap)
