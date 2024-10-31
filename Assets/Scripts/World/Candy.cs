@@ -13,6 +13,12 @@ public class Candy : MonoBehaviour
     [SerializeField] private float destroyAfterSeconds = 1.1f;
     private bool alreadyActivated = false;
 
+    private FMOD.Studio.EventInstance _candyAudio;
+
+    private void Awake()
+    {
+        _candyAudio = FMODUnity.RuntimeManager.CreateInstance("event:/CANDY");
+    }
     public void OnTriggerEnter2D(Collider2D collider)
     {
         Player player = collider.attachedRigidbody.GetComponent<Player>();
@@ -21,6 +27,7 @@ public class Candy : MonoBehaviour
             alreadyActivated = true;
             player.AddScore(scoreValue);
             animator.SetTrigger("Explode");
+            _candyAudio.start();
             Destroy(gameObject, destroyAfterSeconds);
         }
     }
