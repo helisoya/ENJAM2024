@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     private int score;
     private bool stuned;
     private float stunStart;
+    public bool canBeTargetedByBuendia { get; private set; }
 
     [Header("Components")]
     [SerializeField] private PlayerMovements movements;
@@ -37,6 +38,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        canBeTargetedByBuendia = true;
         collided = false;
         stuned = false;
         pad = playerInput.GetDevice<Gamepad>();
@@ -44,6 +46,15 @@ public class Player : MonoBehaviour
 
         ID = GameManager.instance.RegisterPlayer(this);
         GUIID = GameGUI.instance.AddNewPlayerGUI(ID);
+    }
+
+    /// <summary>
+    /// Sets if the player can be targeted by buendia
+    /// </summary>
+    /// <param name="value">Can the player be targeted by buendia ?</param>
+    public void SetCanBeTargetedByBudendia(bool value)
+    {
+        canBeTargetedByBuendia = value;
     }
 
     /// <summary>

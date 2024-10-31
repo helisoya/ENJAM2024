@@ -385,6 +385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   readyUpCheck: {fileID: 97976755006529360}
+  playerText: {fileID: 166069645244829033}
 --- !u!1 &922976695241692545
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,6 +859,11 @@ MonoBehaviour:
   - {fileID: 8222088733077479622}
   - {fileID: 8081281681967587597}
   - {fileID: 8598601474294182}
+  playerColors:
+  - {r: 1, g: 0.491634, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0.9009266, a: 1}
+  - {r: 0, g: 0.80175304, b: 1, a: 1}
+  - {r: 0, g: 1, b: 0.0077590942, a: 1}
   gameplayScreen: {fileID: 1561554476057041324}
   timer: {fileID: 3193210810334973951}
   endScreen: {fileID: 3644440626686416587}
@@ -1381,6 +1387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 6748399528422933960}
+  playerText: {fileID: 3173928960452551279}
 --- !u!1 &4006792025673155969
 GameObject:
   m_ObjectHideFlags: 0
@@ -1432,6 +1439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   readyUpCheck: {fileID: 3503828265543572131}
+  playerText: {fileID: 1576309254874922972}
 --- !u!1 &4121262670598978234
 GameObject:
   m_ObjectHideFlags: 0
@@ -2227,6 +2235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   readyUpCheck: {fileID: 7630268252362981358}
+  playerText: {fileID: 1892558132312382784}
 --- !u!1 &4707406261633185037
 GameObject:
   m_ObjectHideFlags: 0
@@ -3228,6 +3237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 501867748251653218}
+  playerText: {fileID: 8747993895440932108}
 --- !u!1 &5972141658425184616
 GameObject:
   m_ObjectHideFlags: 0
@@ -3279,6 +3289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 2306406415464310708}
+  playerText: {fileID: 1936409245210406705}
 --- !u!1 &6666577747529327123
 GameObject:
   m_ObjectHideFlags: 0
@@ -3464,6 +3475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   readyUpCheck: {fileID: 2007906372040326243}
+  playerText: {fileID: 8637193570572661691}
 --- !u!1 &7630268252362981358
 GameObject:
   m_ObjectHideFlags: 0
@@ -4051,6 +4063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 471854337015961734}
+  playerText: {fileID: 8693959215315853534}
 --- !u!1 &9164708703491190834
 GameObject:
   m_ObjectHideFlags: 0

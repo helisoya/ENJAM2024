@@ -10,7 +10,9 @@ public class Candy : MonoBehaviour
     [Header("Infos")]
     [SerializeField] private int scoreValue = 1;
     [SerializeField] private Animator animator;
-    [SerializeField] private float destroyAfterSeconds = 1.1f;
+    [SerializeField] private float hideAfterSeconds = 1.1f;
+    [SerializeField] private float minRespawnTime = 10;
+    [SerializeField] private float maxRespawnTime = 10;
     private bool alreadyActivated = false;
 
     private FMOD.Studio.EventInstance _candyAudio;
@@ -26,9 +28,18 @@ public class Candy : MonoBehaviour
         {
             alreadyActivated = true;
             player.AddScore(scoreValue);
-            animator.SetTrigger("Explode");
             _candyAudio.start();
-            Destroy(gameObject, destroyAfterSeconds);
+            GameManager.instance.StartCoroutine(Routine_Respawn());
         }
+    }
+
+    IEnumerator Routine_Respawn()
+    {
+        animator.SetTrigger("Explode");
+        yield return new WaitForSeconds(hideAfterSeconds);
+        gameObject.SetActive(false);
+        yield return new WaitForSeconds(Random.Range(minRespawnTime, maxRespawnTime));
+        gameObject.SetActive(true);
+        alreadyActivated = false;
     }
 }

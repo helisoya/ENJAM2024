@@ -9,6 +9,7 @@ using UnityEngine.UI;
 /// </summary>
 public class PlayerGUI : MonoBehaviour
 {
+    [SerializeField] private Image playerImg;
     [SerializeField] private Image attackCooldownFill;
     [SerializeField] private TextMeshProUGUI candyCountFill;
 
@@ -16,6 +17,15 @@ public class PlayerGUI : MonoBehaviour
     {
         SetPlayerCooldownFill(0);
         SetPlayerCandyCount(0);
+    }
+
+    /// <summary>
+    /// Sets the player's color
+    /// </summary>
+    /// <param name="color">The player's color</param>
+    public void SetPlayerColor(Color color)
+    {
+        playerImg.color = color;
     }
 
     /// <summary>

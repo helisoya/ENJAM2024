@@ -46,21 +46,23 @@ public class Chest : MonoBehaviour
     /// <summary>
     /// Opens the chest
     /// </summary>
+    /// <param name="player">The player that opened the chest</param>
     /// <returns>The amount of candy in the chest, -1 means it was trapped</returns>
-    public int Open()
+    public int Open(Player player)
     {
         open = true;
         _chestAudio.start();
         openStart = Time.time;
 
-        if (Random.Range(0f, 1f) <= probabilityOfTrap)
+        if (player.canBeTargetedByBuendia && Random.Range(0f, 1f) <= probabilityOfTrap)
         {
+            player.SetCanBeTargetedByBudendia(false);
             animator.SetTrigger("Trick");
             _chestTrickAudio.start();
 
             return -1;
         }
-
+        player.SetCanBeTargetedByBudendia(true);
         animator.SetTrigger("Treat");
         return Random.Range(minCandy, maxCandy);
     }

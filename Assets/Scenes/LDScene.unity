@@ -188,8 +188,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.5073999, y: 6.4981, z: 0}
-    m_Extent: {x: 5.068, y: 4.2405, z: 0}
+    m_Center: {x: 1.5072501, y: 6.4978, z: 0}
+    m_Extent: {x: 5.8179502, y: 4.9909, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: -3.0610046, y: 6.4502172, z: 0}
@@ -274,8 +274,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -283,7 +283,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -588,8 +588,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6725, y: 6.0792, z: 0}
-    m_Extent: {x: 1.9871, y: 3.2558, z: 0}
+    m_Center: {x: 1.6724999, y: 6.07865, z: 0}
+    m_Extent: {x: 2.7371, y: 4.00635, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -597,7 +597,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -19087,8 +19087,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -19096,7 +19096,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -19457,8 +19457,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -19466,7 +19466,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -19875,8 +19875,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6725, y: 6.0792, z: 0}
-    m_Extent: {x: 1.9871, y: 3.2558, z: 0}
+    m_Center: {x: 1.6724999, y: 6.07865, z: 0}
+    m_Extent: {x: 2.7371, y: 4.00635, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -19884,7 +19884,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -20205,8 +20205,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -20214,7 +20214,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -20440,8 +20440,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -20449,7 +20449,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -20663,8 +20663,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6725, y: 6.0792, z: 0}
-    m_Extent: {x: 1.9871, y: 3.2558, z: 0}
+    m_Center: {x: 1.6724999, y: 6.07865, z: 0}
+    m_Extent: {x: 2.7371, y: 4.00635, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -20672,7 +20672,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -21023,8 +21023,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -21032,7 +21032,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -21298,8 +21298,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -21307,7 +21307,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -21384,8 +21384,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6725, y: 6.0792, z: 0}
-    m_Extent: {x: 1.9871, y: 3.2558, z: 0}
+    m_Center: {x: 1.6724999, y: 6.07865, z: 0}
+    m_Extent: {x: 2.7371, y: 4.00635, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -21393,7 +21393,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -30343,7 +30343,7 @@ CompositeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
+  m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0
   m_ColliderPaths:
@@ -31103,8 +31103,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6725, y: 6.0792, z: 0}
-    m_Extent: {x: 1.9871, y: 3.2558, z: 0}
+    m_Center: {x: 1.6724999, y: 6.07865, z: 0}
+    m_Extent: {x: 2.7371, y: 4.00635, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -31112,7 +31112,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -31189,8 +31189,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6725, y: 6.0792, z: 0}
-    m_Extent: {x: 1.9871, y: 3.2558, z: 0}
+    m_Center: {x: 1.6724999, y: 6.07865, z: 0}
+    m_Extent: {x: 2.7371, y: 4.00635, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -31198,7 +31198,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -31566,8 +31566,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6725, y: 6.0792, z: 0}
-    m_Extent: {x: 1.9871, y: 3.2558, z: 0}
+    m_Center: {x: 1.6724999, y: 6.07865, z: 0}
+    m_Extent: {x: 2.7371, y: 4.00635, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -31575,7 +31575,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -31713,8 +31713,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -31722,7 +31722,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -32085,8 +32085,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -32094,7 +32094,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -32155,6 +32155,14 @@ PrefabInstance:
     - target: {fileID: 1630591824694313938, guid: 7f02333982296ce4ea59147809733a4e, type: 3}
       propertyPath: m_Name
       value: GUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 7117588328591527747, guid: 7f02333982296ce4ea59147809733a4e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000061035156
+      objectReference: {fileID: 0}
+    - target: {fileID: 7117588328591527747, guid: 7f02333982296ce4ea59147809733a4e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000030517578
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32356,8 +32364,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6725, y: 6.0792, z: 0}
-    m_Extent: {x: 1.9871, y: 3.2558, z: 0}
+    m_Center: {x: 1.6724999, y: 6.07865, z: 0}
+    m_Extent: {x: 2.7371, y: 4.00635, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -32365,7 +32373,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -32441,8 +32449,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -32450,7 +32458,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -32593,8 +32601,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6725, y: 6.0792, z: 0}
-    m_Extent: {x: 1.9871, y: 3.2558, z: 0}
+    m_Center: {x: 1.6724999, y: 6.07865, z: 0}
+    m_Extent: {x: 2.7371, y: 4.00635, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -32602,7 +32610,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -33236,8 +33244,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -33245,7 +33253,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -33321,8 +33329,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -33330,7 +33338,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -33534,8 +33542,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -33543,7 +33551,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -33703,8 +33711,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -33712,7 +33720,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -34055,8 +34063,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -34064,7 +34072,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -34298,13 +34306,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candy
       objectReference: {fileID: 0}
+    - target: {fileID: 1202731243154837638, guid: d31cc26fca71ce4448c0cb768b9c7afd, type: 3}
+      propertyPath: m_Size.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202731243154837638, guid: d31cc26fca71ce4448c0cb768b9c7afd, type: 3}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6589071678550210968, guid: d31cc26fca71ce4448c0cb768b9c7afd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.49
+      value: 40.86
       objectReference: {fileID: 0}
     - target: {fileID: 6589071678550210968, guid: d31cc26fca71ce4448c0cb768b9c7afd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.47
+      value: 1.26
       objectReference: {fileID: 0}
     - target: {fileID: 6589071678550210968, guid: d31cc26fca71ce4448c0cb768b9c7afd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -34499,8 +34515,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6725, y: 6.0792, z: 0}
-    m_Extent: {x: 1.9871, y: 3.2558, z: 0}
+    m_Center: {x: 1.6724999, y: 6.07865, z: 0}
+    m_Extent: {x: 2.7371, y: 4.00635, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -34508,7 +34524,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -34817,8 +34833,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6725, y: 6.0792, z: 0}
-    m_Extent: {x: 1.9871, y: 3.2558, z: 0}
+    m_Center: {x: 1.6724999, y: 6.07865, z: 0}
+    m_Extent: {x: 2.7371, y: 4.00635, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -34826,7 +34842,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -35181,8 +35197,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6725, y: 6.0792, z: 0}
-    m_Extent: {x: 1.9871, y: 3.2558, z: 0}
+    m_Center: {x: 1.6724999, y: 6.07865, z: 0}
+    m_Extent: {x: 2.7371, y: 4.00635, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -35190,7 +35206,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -35349,8 +35365,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6725, y: 6.0792, z: 0}
-    m_Extent: {x: 1.9871, y: 3.2558, z: 0}
+    m_Center: {x: 1.6724999, y: 6.07865, z: 0}
+    m_Extent: {x: 2.7371, y: 4.00635, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -35358,7 +35374,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -35434,8 +35450,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -35443,7 +35459,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -35715,8 +35731,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -35724,7 +35740,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -35863,8 +35879,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6725, y: 6.0792, z: 0}
-    m_Extent: {x: 1.9871, y: 3.2558, z: 0}
+    m_Center: {x: 1.6724999, y: 6.07865, z: 0}
+    m_Extent: {x: 2.7371, y: 4.00635, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -35872,7 +35888,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -36010,8 +36026,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -36019,7 +36035,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -36095,8 +36111,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -36104,7 +36120,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -37000,8 +37016,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -37009,7 +37025,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}
@@ -37147,8 +37163,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6434, y: 5.5600996, z: 0}
-    m_Extent: {x: 2.016, y: 2.7366998, z: 0}
+    m_Center: {x: 1.64345, y: 5.55955, z: 0}
+    m_Extent: {x: 2.76555, y: 3.4872499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -37156,7 +37172,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1.25
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.18527603, y: 6.299201, z: 0}

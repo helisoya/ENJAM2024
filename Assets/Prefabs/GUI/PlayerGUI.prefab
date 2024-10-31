@@ -183,6 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94dea4c275f9f1a428d141e1dbfb7f9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerImg: {fileID: 1003741271717816263}
   attackCooldownFill: {fileID: 6708500721191815476}
   candyCountFill: {fileID: 6531254351678744611}
 --- !u!1 &8712059826957465444
