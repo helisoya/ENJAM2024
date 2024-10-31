@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 /// <summary>
 /// Handles the player's attack
@@ -33,6 +34,7 @@ public class PlayerAttack : MonoBehaviour
         AttackAudio.start();
 
         lastAttack = Time.time;
+        player.SetLightRadius(attackRadius);
         player.SetAnimationTrigger("Attack");
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, attackRadius, attackMask);
 
@@ -42,7 +44,7 @@ public class PlayerAttack : MonoBehaviour
             if (playerFound != player)
             {
                 // Not me, so die please
-                Vector3 vector = collider.transform.position + collider.bounds.center - transform.position;
+                Vector3 vector = collider.bounds.center - transform.position;
                 if (!Physics2D.Raycast(transform.position, vector, vector.magnitude, objectsMask))
                 {
                     player.AddScore(playerFound.Stun(true));

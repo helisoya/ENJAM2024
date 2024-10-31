@@ -224,7 +224,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 1.5
+  m_PointLightOuterRadius: 3.5
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -316,11 +316,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stunLength: 2.5
-  amountLostOnStun: 3
+  amountLostOnStun: 20
+  lightRadiusWhenStuned: 2
   movements: {fileID: 1285571663784977403}
   attack: {fileID: 3091499612004333711}
   interraction: {fileID: 3395422915682316485}
   animator: {fileID: 8913601812457459035}
+  linkedLight: {fileID: 3403709364903898716}
   playerInput: {fileID: 8755377669704823976}
   collisionCooldown: 0.5
 --- !u!114 &1285571663784977403
