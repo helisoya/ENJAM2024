@@ -34306,13 +34306,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candy
       objectReference: {fileID: 0}
+    - target: {fileID: 6281536601043116151, guid: d31cc26fca71ce4448c0cb768b9c7afd, type: 3}
+      propertyPath: maxRespawnTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281536601043116151, guid: d31cc26fca71ce4448c0cb768b9c7afd, type: 3}
+      propertyPath: minRespawnTime
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6589071678550210968, guid: d31cc26fca71ce4448c0cb768b9c7afd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.49
+      value: 40.86
       objectReference: {fileID: 0}
     - target: {fileID: 6589071678550210968, guid: d31cc26fca71ce4448c0cb768b9c7afd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.47
+      value: 1.26
       objectReference: {fileID: 0}
     - target: {fileID: 6589071678550210968, guid: d31cc26fca71ce4448c0cb768b9c7afd, type: 3}
       propertyPath: m_LocalPosition.z
