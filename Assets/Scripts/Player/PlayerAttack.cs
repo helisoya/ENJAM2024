@@ -15,9 +15,13 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private Player player;
     private float lastAttack;
 
+    private FMOD.Studio.EventInstance AttackAudio;
+
+
     void Start()
     {
         lastAttack = -attackCooldown;
+        AttackAudio = FMODUnity.RuntimeManager.CreateInstance("event:/ATTACK");
     }
 
     /// <summary>
@@ -26,6 +30,7 @@ public class PlayerAttack : MonoBehaviour
     public void TryAttack()
     {
         if (Time.time - lastAttack < attackCooldown) return;
+        AttackAudio.start();
 
         lastAttack = Time.time;
         player.SetAnimationTrigger("Attack");

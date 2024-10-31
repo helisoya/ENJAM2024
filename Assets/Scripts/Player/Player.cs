@@ -29,6 +29,7 @@ public class Player : MonoBehaviour
     private float collisionStart;
     private bool collided;
 
+    
 
     void Start()
     {
@@ -36,6 +37,7 @@ public class Player : MonoBehaviour
         stuned = false;
         pad = playerInput.GetDevice<Gamepad>();
         if (pad != null) pad.SetMotorSpeeds(0f, 0f);
+        
     }
 
     /// <summary>
@@ -124,7 +126,9 @@ public class Player : MonoBehaviour
     {
         if (!stuned && GameManager.instance.InGame)
         {
+
             attack.TryAttack();
+           
         }
     }
 
