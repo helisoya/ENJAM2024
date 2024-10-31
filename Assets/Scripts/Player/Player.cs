@@ -46,6 +46,8 @@ public class Player : MonoBehaviour
 
         ID = GameManager.instance.RegisterPlayer(this);
         GUIID = GameGUI.instance.AddNewPlayerGUI(ID);
+
+        animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Players/" + ID + "/Player");
     }
 
     /// <summary>
