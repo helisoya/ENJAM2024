@@ -8,8 +8,10 @@ using UnityEngine.InputSystem;
 /// </summary>
 public class Player : MonoBehaviour
 {
+    public int ID { get; private set; }
+    public int GUIID { get; private set; }
+
     [Header("Infos")]
-    [SerializeField] private int ID;
     [SerializeField] private float stunLength = 3;
     [SerializeField] private int amountLostOnStun = 2;
     private int score;
@@ -36,15 +38,9 @@ public class Player : MonoBehaviour
         stuned = false;
         pad = playerInput.GetDevice<Gamepad>();
         if (pad != null) pad.SetMotorSpeeds(0f, 0f);
-    }
 
-    /// <summary>
-    /// Gets the player's ID
-    /// </summary>
-    /// <returns>The player's ID</returns>
-    public int GetID()
-    {
-        return ID;
+        ID = GameManager.instance.RegisterPlayer(this);
+        GUIID = GameGUI.instance.AddNewPlayerGUI(ID);
     }
 
     /// <summary>
@@ -138,10 +134,17 @@ public class Player : MonoBehaviour
 
     void OnInterract1(InputValue input)
     {
-        print("Pause ?");
         if (input.isPressed && GameManager.instance.InGame)
         {
             GameGUI.instance.TogglePauseMenu();
+        }
+    }
+
+    void OnReadyUp(InputValue input)
+    {
+        if (input.isPressed && !GameManager.instance.InGame)
+        {
+            GameManager.instance.ReadyUp(ID);
         }
     }
 

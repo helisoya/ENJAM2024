@@ -26,7 +26,7 @@ public class Chest : MonoBehaviour
         if (open && Time.time - openStart >= cooldownTime)
         {
             open = false;
-            animator.SetTrigger("Toggle");
+            animator.SetTrigger("Close");
         }
     }
 
@@ -46,14 +46,16 @@ public class Chest : MonoBehaviour
     public int Open()
     {
         open = true;
-        animator.SetTrigger("Toggle");
+
         openStart = Time.time;
 
         if (Random.Range(0f, 1f) <= probabilityOfTrap)
         {
+            animator.SetTrigger("Trick");
             return -1;
         }
 
+        animator.SetTrigger("Treat");
         return Random.Range(minCandy, maxCandy);
     }
 }

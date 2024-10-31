@@ -9,14 +9,19 @@ public class Candy : MonoBehaviour
 {
     [Header("Infos")]
     [SerializeField] private int scoreValue = 1;
+    [SerializeField] private Animator animator;
+    [SerializeField] private float destroyAfterSeconds = 1.1f;
+    private bool alreadyActivated = false;
 
     public void OnTriggerEnter2D(Collider2D collider)
     {
         Player player = collider.attachedRigidbody.GetComponent<Player>();
-        if (player)
+        if (!alreadyActivated && player)
         {
+            alreadyActivated = true;
             player.AddScore(scoreValue);
-            Destroy(gameObject);
+            animator.SetTrigger("Explode");
+            Destroy(gameObject, destroyAfterSeconds);
         }
     }
 }

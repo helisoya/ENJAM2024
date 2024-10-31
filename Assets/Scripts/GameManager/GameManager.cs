@@ -7,17 +7,53 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public bool InGame { get; private set; }
+    private List<int> readyUps;
 
     [Header("Timer")]
     [SerializeField] private float gameTimeInSeconds;
 
     [Header("Players")]
-    [SerializeField] private Player[] players;
+    [SerializeField] private Transform[] spawnPositions;
+    public List<Player> players { get; private set; }
 
     void Awake()
     {
         instance = this;
-        InGame = true;
+        InGame = false;
+        players = new List<Player>();
+        readyUps = new List<int>();
+    }
+
+    /// <summary>
+    /// Registers a new player
+    /// </summary>
+    /// <param name="player">The new player</param>
+    /// <returns>The new player's ID</returns>
+    public int RegisterPlayer(Player player)
+    {
+        int ID = players.Count;
+        players.Add(player);
+        player.transform.position = spawnPositions[ID].position;
+        return ID;
+    }
+
+    /// <summary>
+    /// Ready up a player
+    /// </summary>
+    /// <param name="ID">The player's ID</param>
+    /// <param name="GUIID">The player's GUIID</param>
+    public void ReadyUp(int ID)
+    {
+        if (!readyUps.Contains(ID))
+        {
+            readyUps.Add(ID);
+            GameGUI.instance.ReadyUpPlayer(ID);
+            if (readyUps.Count >= players.Count)
+            {
+                InGame = true;
+                GameGUI.instance.OpenGamePlayScreen();
+            }
+        }
     }
 
     void Update()
@@ -29,7 +65,7 @@ public class GameManager : MonoBehaviour
         {
             // End
             InGame = false;
-            GameGUI.instance.OpenEndScreen(players[0].GetScore(), players[1].GetScore());
+            GameGUI.instance.OpenEndScreen(players);
         }
         else
         {

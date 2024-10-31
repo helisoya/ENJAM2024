@@ -7,7 +7,7 @@ using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 public class AudioManager : MonoBehaviour
 {
     //singleton
-   [SerializeField]private Player _player1;
+    [SerializeField] private Player _player1;
     [SerializeField] private Player _player2;
     public static AudioManager Instance { get; private set; }
     // Start is called before the first frame update
@@ -38,7 +38,7 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         //_levelAmbianceAudio.start();
-        
+
     }
 
     // Update is called once per frame
@@ -46,14 +46,14 @@ public class AudioManager : MonoBehaviour
     {
 
 
-        if(_player1.GetComponent<Rigidbody2D>().velocity != Vector2.zero && _canPlayer1AudioPlay)
+        if (_player1.GetComponent<Rigidbody2D>().velocity != Vector2.zero && _canPlayer1AudioPlay)
         {
             _player1Movement.start();
             _canPlayer1AudioPlay = false;
         }
-        
-        if(_player1.GetComponent<Rigidbody2D>().velocity == Vector2.zero && _canPlayer1AudioPlay == false) 
-            {
+
+        if (_player1.GetComponent<Rigidbody2D>().velocity == Vector2.zero && _canPlayer1AudioPlay == false)
+        {
             _canPlayer1AudioPlay = true;
             _player1Movement.stop(STOP_MODE.ALLOWFADEOUT);
 
