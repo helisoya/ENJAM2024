@@ -19,6 +19,7 @@ public class GameGUI : MonoBehaviour
     [Header("Players")]
     [SerializeField] private PlayerGUI prefabPlayerGUI;
     [SerializeField] private Transform[] playersGUIRoots;
+    [SerializeField] private Color[] playerColors;
     private List<PlayerGUI> playersGUI;
 
     [Header("General")]
@@ -62,6 +63,7 @@ public class GameGUI : MonoBehaviour
             if (i < players.Count)
             {
                 scores[i].SetScore(players[i].GetScore());
+                scores[i].SetColor(playerColors[players[i].ID]);
             }
             else
             {
@@ -122,7 +124,10 @@ public class GameGUI : MonoBehaviour
     {
         int GUIID = playersGUI.Count;
         playerReadyUps[ID].gameObject.SetActive(true);
-        playersGUI.Add(Instantiate(prefabPlayerGUI, playersGUIRoots[GUIID]));
+        playerReadyUps[ID].SetPlayerColor(playerColors[ID]);
+        PlayerGUI player = Instantiate(prefabPlayerGUI, playersGUIRoots[GUIID]);
+        player.SetPlayerColor(playerColors[ID]);
+        playersGUI.Add(player);
         return GUIID;
     }
 

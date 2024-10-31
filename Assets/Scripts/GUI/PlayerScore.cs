@@ -9,6 +9,7 @@ using UnityEngine;
 public class PlayerScore : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI playerText;
 
     /// <summary>
     /// Sets the component's score
@@ -17,5 +18,14 @@ public class PlayerScore : MonoBehaviour
     public void SetScore(int score)
     {
         scoreText.text = score.ToString();
+    }
+
+    /// <summary>
+    /// Sets the player's color
+    /// </summary>
+    /// <param name="color">The player's color</param>
+    public void SetColor(Color color)
+    {
+        playerText.color = color;
     }
 }
