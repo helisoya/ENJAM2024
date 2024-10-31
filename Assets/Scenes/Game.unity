@@ -12109,7 +12109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ea41096fff528347848db7e459b7efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTimeInSeconds: 300
+  gameTimeInSeconds: 120
   spawnPositions:
   - {fileID: 1353077661}
   - {fileID: 596021722}

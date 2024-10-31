@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Damage
+  m_Name: Attack
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -31,7 +31,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 3
+        time: 1
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -51,7 +51,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -1471688119, guid: f984003a821cba44ba6e2048320a6732, type: 3}
+      value: {fileID: 1317405492, guid: a11184439eba6934ba4ecd6f8be14877, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -83,13 +83,13 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -1471688119, guid: f984003a821cba44ba6e2048320a6732, type: 3}
+    - {fileID: 1317405492, guid: a11184439eba6934ba4ecd6f8be14877, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 3
+    m_StopTime: 1
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -119,7 +119,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 3
+        time: 1
         value: 0
         inSlope: Infinity
         outSlope: Infinity

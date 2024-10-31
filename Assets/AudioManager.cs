@@ -2,7 +2,6 @@ using FMOD.Studio;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
 public class AudioManager : MonoBehaviour
 {
@@ -51,14 +50,14 @@ public class AudioManager : MonoBehaviour
         //{
         //    _player1Movement.start();
         //    _canPlayer1AudioPlay = false;
-            
+
         //}
 
         //if (_player1.GetComponent<Rigidbody2D>().velocity == Vector2.zero && _canPlayer1AudioPlay == false)
         //{
         //    _canPlayer1AudioPlay = true;
         //    _player1Movement.stop(STOP_MODE.ALLOWFADEOUT);
-            
+
 
         //}
 
@@ -77,5 +76,5 @@ public class AudioManager : MonoBehaviour
         //}
     }
 
- 
+
 }
