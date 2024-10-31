@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2d625577b474b4e45991d3f40daf00d6
+guid: 08d60e90b933fe649b75f108f3e036b4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Door_0
+      name: Chest_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 64
-        height: 96
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 420b0ca38965a3544ac68325df935369
-      internalID: 1248999909
+      spriteID: edfa6ad563fd6fe4489c73d924924c43
+      internalID: -1460366874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door_1
+      name: Chest_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 64
-        height: 96
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73763cb4aefa24f47b461060c8757e5a
-      internalID: -1007056930
+      spriteID: 858b42b299189aa4a8a7cb4cf1e2b5bc
+      internalID: -649052
       vertices: []
       indices: 
       edges: []
@@ -162,8 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Door_0: 1248999909
-      Door_1: -1007056930
+      Chest_0: -1460366874
+      Chest_1: -649052
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

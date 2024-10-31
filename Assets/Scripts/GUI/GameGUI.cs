@@ -24,6 +24,9 @@ public class GameGUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI player1ScoreText;
     [SerializeField] private TextMeshProUGUI player2ScoreText;
 
+    [Header("Pause Screen")]
+    [SerializeField] private GameObject pauseScreen;
+
     void Awake()
     {
         instance = this;
@@ -33,6 +36,16 @@ public class GameGUI : MonoBehaviour
             SetPlayerCandyCount(i, 0);
             SetPlayerCooldownFill(i, 0);
         }
+    }
+
+    /// <summary>
+    /// Toggle the pause menu
+    /// </summary>
+    public void TogglePauseMenu()
+    {
+        print("Hello");
+        pauseScreen.SetActive(!pauseScreen.activeInHierarchy);
+        Time.timeScale = pauseScreen.activeInHierarchy ? 0 : 1;
     }
 
     /// <summary>
